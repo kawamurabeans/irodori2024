@@ -7,17 +7,17 @@
     
     <body>
         <div class="main_content_wrapper">
-            <section class="top_eye_catch">
+            <section class="top_eye_catch fadeUp_top_eye">
                 <div class="text_wrapper">
-                    <div class="logo">
+                    <div class="logo delay-time01 fadeDown_logo01">
                     </div>
-                    <div class="text01">
+                    <div class="text01 delay-time01 fadeRight_text01">
                         <p>いろどり</p>
                     </div>
-                    <div class="text02">
+                    <div class="text02 delay-time01 fadeLeft_text02">
                         <p>Irodori S</p>
                     </div>
-                    <div class="text03">
+                    <div class="text03 delay-time02 fadeDown_text03 ">
                         <p>Since 2001</p>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
         *, *::before, *::after {
             box-sizing: border-box;
         }
-    
+
         /* 要素設定 */
         .main_content_wrapper {
             width: 375px;
@@ -83,7 +83,6 @@
             font-family: ab-andante, sans-serif;
             font-style: normal;
             font-weight: bolder;
-            transform: rotate(-6deg);
             position: absolute;
             top: 24%;
             left: 56%;
@@ -107,13 +106,125 @@
         }
 
         .text03 {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             font-family: ab-andante, sans-serif;
-            transform: rotate(90deg);
+            font-style: normal;
+            font-weight: bolder;
             position: absolute;
-            top: 60%;
-            left: 80%;
+            top: 80%;
+            left: 50%;
             color: #fff;
+            padding-left: 20px;
+            padding-right: 165px;
+            border-bottom: 1.5px solid #fff;
+            white-space: nowrap;
+
+            p {
+                margin: 0 auto;
+            }
+        }
+
+        /* アニメーション設定 */
+        .fadeUp_top_eye {
+            animation-name: fadeUpAnimeTopEye;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+        @keyframes fadeUpAnimeTopEye{
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fadeDown_logo01 {
+            animation-name: fadeDownAnimeLogo01;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            opacity:0;
+        }
+
+        @keyframes fadeDownAnimeLogo01 {
+            from {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fadeRight_text01 {
+            animation-name: fadeRightAnimeText01;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            opacity:0;
+        }
+
+        @keyframes fadeRightAnimeText01 {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+                transform: rotate(-6deg);
+            }
+        }
+
+        .fadeLeft_text02 {
+            animation-name: fadeLeftAnimeText02;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            opacity:0;
+        }
+
+        @keyframes fadeLeftAnimeText02 {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fadeDown_text03 {
+            animation-name: fadeDownAnimeText03;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            opacity:0;
+        }
+
+        @keyframes fadeDownAnimeText03 {
+            from {
+                opacity: 0;
+                transform: rotate(90deg);
+            }
+
+            to {
+                opacity: 1;
+                transform: rotate(90deg);
+            }
+        }
+
+
+        .delay-time01 {
+            animation-delay: 1.5s;
+        }
+
+        .delay-time02 {
+            animation-delay: 2s;
         }
 
 
