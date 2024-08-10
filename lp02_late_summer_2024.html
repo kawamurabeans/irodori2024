@@ -8,24 +8,68 @@
     <body>
         <div class="main_content_wrapper">
             <section class="top_eye_catch fadeUp_top_eye">
-                <div class="text_wrapper">
-                    <div class="logo delay-time01 fadeDown_logo01">
+                <div class="text_wrapper01">
+                    <div class="logo01 fadeDown_logo01">
+                        <img class="logo_pic01" src="images/logo.jpg" alt="甘納豆かわむら">
                     </div>
-                    <div class="text01 delay-time01 fadeRight_text01">
+                    <div class="text01 fadeRight_text01">
                         <p>いろどり</p>
                     </div>
-                    <div class="text02 delay-time01 fadeLeft_text02">
+                    <div class="text02 fadeLeft_text02">
                         <p>Irodori S</p>
                     </div>
-                    <div class="text03 delay-time02 fadeDown_text03 ">
+                    <div class="text03 fade_text03">
                         <p>Since 2001</p>
                     </div>
+                    <div class="dividing_lines01">
+                        <span class="dividing_line001 fadeDown_dividing_line001">
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content01">
+                <div class="text_wrapper02">
+                    <div class="dividing_lines02">
+                        <span class="dividing_line002 fadeDown_dividing_line002"></span>
+                        <span class="dividing_line003 fadeDown_dividing_line003"></span>
+                    </div>
+                    <div class="text04 fade_text04">
+                        <p>ギフトを送るなら・・・　かわむらの新定番</p>
+                    </div>
+                    <div class="text05 fade_text05">
+                        <p>Irodori S</p>
+                    </div>
+                </div>
+                <div class="text_wrapper03 fadeLeft_text_wrapper03">
+                    <p class="text06">“いろどり”鮮やかな<br>ギフトセレクション</p>
+                    <p>それでいて幅広い年齢層の方に<br>愛されることも心がけております</p>
+                    <p>「どれにする？」<br>「私はこれにしよう！」<br>家族団欒の中こんな声が聞こえてくる</p>
+                    <p>いつもの日常を<br>かわむらの菓子で“いろどる”<br>そんな想いを詰め合わせました</p>
+                </div>
+            </section>
+
+            <section class="content02">
+                <div class="text_wrapper04">
+                    <div class="dividing_lines03">
+                        <span class="dividing_line004 fadeDown_dividing_line004"></span>
+                    </div>
+                    <div class="text07 fade_text07">
+                        <p>Special Gift</p>
+                    </div>
+                </div>
+                <div class="text_wrapper05 fadeRight_text_wrapper05">
+                    <p class="text08">金沢で生まれた甘納豆専門店<br>かわむらの粋を集めた至宝</p>
+                    <img class="irodori_pic01" src="images/irodori01.jpeg" alt="irodori01" >
+                    <p class="text09">暑中見舞い 残暑見舞い<br>気持ちを伝えるギフトに最適の一品</p>
                 </div>
             </section>
         </div>
     
         <script type="text/javascript">
-             (function(d) {
+
+            // Adobeフォントを読み込む
+            (function(d) {
                 var config = {
                 kitId: 'uym3fxn',
                 scriptTimeout: 3000,
@@ -33,6 +77,8 @@
                 },
                 h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
             })(document);
+
+
         </script>
     
         <style>
@@ -53,29 +99,34 @@
             box-sizing: border-box;
         }
 
-        /* 要素設定 */
         .main_content_wrapper {
             width: 375px;
             margin: 30px auto 40px;
         }
-    
+
+        /* トップアイキャッチ */
         .top_eye_catch {
             width: 100%;
             height: 563px;
-            background-image: url("images/top_eye_catch.png");
+            background-image: url("images/top_eye_catch.jpg");
             background-size: contain;
             position: relative;
         }
 
-        .logo {
+        .logo01 {
             width: 35px;
             height: 180px;
-            background-image: url("images/logo.png");
+            /* background-image: url("images/logo.png");
             background-size: contain;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat; */
             position: absolute;
             top: 6%;
             left: 2%;
+
+            .logo_pic01 {
+                width: 90%;
+                height: 100%;
+            }
         }
 
         .text01 {
@@ -111,23 +162,26 @@
             font-style: normal;
             font-weight: bolder;
             position: absolute;
-            top: 80%;
-            left: 50%;
+            top: 60%;
+            left: 75%;
             color: #fff;
-            padding-left: 20px;
-            padding-right: 165px;
-            border-bottom: 1.5px solid #fff;
             white-space: nowrap;
-
-            p {
-                margin: 0 auto;
-            }
         }
 
-        /* アニメーション設定 */
+        .dividing_line001 {
+            position: absolute;
+            top: 54%;
+            left: 89%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #fff;
+        }
+
+        /* トップアイキャッチ_アニメーション設定 */
         .fadeUp_top_eye {
             animation-name: fadeUpAnimeTopEye;
-            animation-duration: 2s;
+            animation-duration: 1s;
             animation-fill-mode: forwards;
             opacity: 0;
         }
@@ -145,6 +199,7 @@
             animation-name: fadeDownAnimeLogo01;
             animation-duration: 0.5s;
             animation-fill-mode: forwards;
+            animation-delay: 0.5s;
             opacity:0;
         }
 
@@ -164,6 +219,7 @@
             animation-name: fadeRightAnimeText01;
             animation-duration: 0.5s;
             animation-fill-mode: forwards;
+            animation-delay: 0.5s;
             opacity:0;
         }
 
@@ -184,6 +240,7 @@
             animation-name: fadeLeftAnimeText02;
             animation-duration: 0.5s;
             animation-fill-mode: forwards;
+            animation-delay: 0.5s;
             opacity:0;
         }
 
@@ -199,14 +256,15 @@
             }
         }
 
-        .fadeDown_text03 {
-            animation-name: fadeDownAnimeText03;
-            animation-duration: 1s;
+        .fade_text03 {
+            animation-name: fadeAnimeText03;
+            animation-duration: 0.5s;
             animation-fill-mode: forwards;
+            animation-delay: 1s;
             opacity:0;
         }
 
-        @keyframes fadeDownAnimeText03 {
+        @keyframes fadeAnimeText03 {
             from {
                 opacity: 0;
                 transform: rotate(90deg);
@@ -218,15 +276,316 @@
             }
         }
 
-
-        .delay-time01 {
+        .fadeDown_dividing_line001 {
+            animation-name: fadeDownAnimeDividingLine01;
+            animation-duration: 0.4s;
+            animation-fill-mode: forwards;
             animation-delay: 1.5s;
         }
 
-        .delay-time02 {
-            animation-delay: 2s;
+        @keyframes fadeDownAnimeDividingLine01 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 260px;
+            }
         }
 
+        /* コンテンツ01 */
+
+        .content01 {
+            width: 100%;
+            height: 428px;
+            position: relative;
+        }
+
+        .dividing_line002 {
+            position: absolute;
+            left: 89%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .dividing_line003 {
+            position: absolute;
+            bottom: 0;
+            right: 11%;
+            content: "";
+            height: 2px;
+            width: 0px;
+            background-color : #b1a59d;
+        }
+
+        .text04 {
+            font-size: 1.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            font-weight: bolder;
+            position: absolute;
+            top: 31%;
+            left: 56%;
+            color: #644c3d;
+            white-space: nowrap;
+        }
+
+        .text05 {
+            font-size: 2.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            position: absolute;
+            top: 57%;
+            left: 72%;
+            color: #644c3d;
+            white-space: nowrap;
+        }
+
+        .text_wrapper03 {
+            position: absolute;
+            top: 10%;
+            width: 280px;
+            height: 340px;
+            background-color: #b1a59d;
+            font-size: 1.2rem;
+            color: white;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            text-align: center;
+
+            .text06 {
+                display: inline-block;
+                margin-top: 23px;
+            }
+        }
+
+        /* コンテンツ01_アニメーション設定 */
+        .fadeDown_dividing_line002 {
+            animation-name: fadeDownAnimeDividingLine02;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.9s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine02 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 428px;
+            }
+        }
+
+        .fadeDown_dividing_line003 {
+            animation-name: fadeDownAnimeDividingLine03;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 2.4s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine03 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 293px;
+            }
+        }
+
+        .fade_text04 {
+            animation-name: fadeAnimeText04;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+            opacity:0;
+        }
+
+        @keyframes fadeAnimeText04 {
+            from {
+                opacity: 0;
+                transform: rotate(90deg);
+            }
+
+            to {
+                opacity: 1;
+                transform: rotate(90deg);
+            }
+        }
+
+        .fade_text05 {
+            animation-name: fadeAnimeText05;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+            opacity:0;
+        }
+
+        @keyframes fadeAnimeText05 {
+            from {
+                opacity: 0;
+                transform: rotate(-90deg);
+            }
+
+            to {
+                opacity: 1;
+                transform: rotate(-90deg);
+            }
+        }
+
+        .fadeLeft_text_wrapper03 {
+            animation-name: fadeLeftAnimeTextWrapper03;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+            opacity:0;
+        }
+
+        @keyframes fadeLeftAnimeTextWrapper03 {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* コンテンツ02 */
+
+        .content02 {
+            width: 100%;
+            height: 388px;
+            position: relative;
+        }
+
+        .dividing_line004 {
+            position: absolute;
+            top: -0.5%;
+            left:  10.7%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .text07 {
+            font-size: 2.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            position: absolute;
+            top: 80%;
+            left: -12%;
+            color: #644c3d;
+            white-space: nowrap;
+            p {
+                margin: 0;
+            }
+        }
+
+        .text_wrapper05 {
+            height: 340px;
+        }
+
+        .text08 {
+            display: block;
+            font-size: 1.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            font-weight: bolder;
+            position: absolute;
+            top: 4%;
+            right: 18%;
+            color: #644c3d;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        .irodori_pic01 {
+            display: block;
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            right: 0;
+            top: 30%;
+        }
+
+        .text09 {
+            display: block;
+            font-size: 1.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            font-weight: bolder;
+            position: absolute;
+            top: 91%;
+            right: 13%;
+            color: #644c3d;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        /* コンテンツ02_アニメーション設定 */
+        .fadeDown_dividing_line004 {
+            animation-name: fadeDownAnimeDividingLine04;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 2.9s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine04 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 428px;
+            }
+        }
+
+        .fade_text07 {
+            animation-name: fadeAnimeText07;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-delay: 3s;
+            opacity:0;
+        }
+
+        @keyframes fadeAnimeText07 {
+            from {
+                opacity: 0;
+                transform: rotate(-90deg);
+            }
+
+            to {
+                opacity: 1;
+                transform: rotate(-90deg);
+            }
+        }
+
+        .fadeRight_text_wrapper05 {
+            animation-name: fadeRightAnimeTextWrapper05;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-delay: 3s;
+            opacity:0;
+        }
+
+        @keyframes fadeRightAnimeTextWrapper05 {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
         </style>
     </body>
