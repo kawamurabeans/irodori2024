@@ -64,8 +64,34 @@
                     <p class="text09">暑中見舞い 残暑見舞い<br>気持ちを伝えるギフトに最適の一品</p>
                 </div>
             </section>
+
+            <section class="content03">
+                <div class="noto_dainagon_wrapper">
+                    <div class="text_wrapper06">
+                        <div class="dividing_lines04">
+                            <span class="dividing_line005 js_trigger04"></span>
+                            <span class="dividing_line006 js_trigger05"></span>
+                            <span class="dividing_line007 js_trigger06"></span>
+                            <span class="dividing_line008 js_trigger07"></span>
+                        </div>
+                        <div class="text10 js_trigger08">
+                            <p>能登大納言</p>
+                        </div>
+                    </div>
+                    <div class="indp_img_wrapper01 js_trigger01">
+                        <img class="noto_dainagon_pic" src="images/noto_dainagon.jpg">
+                    </div>
+                    <div class="indp_img_wrapper02 js_trigger02">
+                        <img class="triangle01_pic" src="images/triangle01.jpg">
+                    </div>
+                    <div class="text_wrapper07 js_trigger03">
+                        <p>開発当初は<br>珠洲大納言と呼ばれていました<br>ご当地の大納言小豆です</p>
+                        <p>収穫には“さやぼり”と呼ばれる<br>手作業が中心で<br>ひとさやずつ手で丁寧に収穫した<br>高品質な大納言小豆です</p>
+                    </div>
+                </div>
+            </section>
         </div>
-    
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script type="text/javascript">
 
             // Adobeフォントを読み込む
@@ -78,9 +104,113 @@
                 h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
             })(document);
 
+            // noto_dainagonアニメーション
+            $(function() {
+                $.when(
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger01').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $(this).offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeLeft_indp_img_wrapper01');
+                                }
+                            });
+                        });
+                    }),
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger02').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger01').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeRight_indp_img_wrapper02');
+                                }
+                            });
+                        });
+                    }),
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger03').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger01').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeRight_text_wrapper07');
+                                }
+                            });
+                        });
+                    }),
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger08').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger01').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('.fade_text10');
+                                }
+                            });
+                        });
+                    })
+                ).done(function(){ 
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger04').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger01').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeLeft_dividing_line005');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger05').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger01').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeDown_dividing_line006');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger06').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger01').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeDown_dividing_line007');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger07').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger01').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeDown_dividing_line008');
+                                }
+                            });
+                        });
+                    });
+                }); 
+            });
+            
+
 
         </script>
-    
+        
         <style>
         /* 基本設定 */
         @charset "UTF-8";
@@ -479,7 +609,7 @@
             font-family: fot-tsukubrdgothic-std, sans-serif;
             font-style: normal;
             position: absolute;
-            top: 80%;
+            top: 70%;
             left: -12%;
             color: #644c3d;
             white-space: nowrap;
@@ -543,7 +673,7 @@
             }
 
             to {
-                height: 428px;
+                height: 390px;
             }
         }
 
@@ -576,6 +706,254 @@
         }
 
         @keyframes fadeRightAnimeTextWrapper05 {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* コンテンツ03 */
+
+        .content03 {
+            width: 100%;
+            height: 3150px;
+        }
+
+        .noto_dainagon_wrapper {
+            width: 100%;
+            height: 640px;
+            position: relative;
+        }
+
+
+
+        .dividing_line005 {
+            position: absolute;
+            top: -0.2%;
+            left: 10.8%;
+            content: "";
+            height: 2px;
+            width: 0px;
+            background-color : #b1a59d;
+            transform-origin: left center;
+            transform: rotate(12deg);
+        }
+
+        .dividing_line006 {
+            position: absolute;
+            top: 9.5%;
+            right: 11%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .dividing_line007 {
+            position: absolute;
+            top: 42.8%;
+            right: 11%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #FFF;
+        }
+
+        .dividing_line008 {
+            position: absolute;
+            top: 91.4%;
+            right: 11%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .text10 {
+            font-size: 2.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            position: absolute;
+            top: 60%;
+            right: -10%;
+            color: #FFF;
+            white-space: nowrap;
+            transform: rotate(90deg);
+            p {
+                margin: 0;
+            }
+        }
+
+        .indp_img_wrapper01 {
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 12%;
+        }
+
+        .noto_dainagon_pic {
+            display: block;
+            width: 290px;
+            height: 195px;
+        }
+
+        .indp_img_wrapper02 {
+            opacity: 0;
+            position: absolute;
+            top: 37%;
+            right: -15%;
+        }
+
+        .text_wrapper07 {
+            position: absolute;
+            top: 53%;
+            left: 23%;
+            font-size: 1.5rem;
+            color: white;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        /* コンテンツ03_アニメーション設定 */
+        .fadeLeft_dividing_line005 {
+            animation-name: fadeLeftAnimeDividingLine05;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fadeLeftAnimeDividingLine05 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 300px;
+            }
+        }
+
+        .fadeDown_dividing_line006 {
+            animation-name: fadeDownAnimeDividingLine06;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine06 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 212px;
+            }
+        }
+
+        .fadeDown_dividing_line007 {
+            animation-name: fadeDownAnimeDividingLine07;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.2s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine07 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 322px;
+            }
+        }
+
+        .fadeDown_dividing_line008 {
+            animation-name: fadeDownAnimeDividingLine08;
+            animation-duration: 0.1s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.4s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine08 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 46px;
+            }
+        }
+
+        .fade_text10 {
+            animation-name: fadeAnimeText10;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            opacity:0;
+        }
+
+        @keyframes fadeAnimeText10 {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fadeLeft_indp_img_wrapper01 {
+            animation-name: fadeLeftAnimeIndpImgWrapper01;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            opacity:0;
+        }
+
+        @keyframes fadeLeftAnimeIndpImgWrapper01 {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fadeRight_indp_img_wrapper02 {
+            animation-name: fadeRightAnimeIndpImgWrapper02;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            opacity:0;
+            z-index: -1;
+        }
+
+        @keyframes fadeRightAnimeIndpImgWrapper02 {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fadeRight_text_wrapper07 {
+            animation-name: fadeRightAnimeTextWrapper07;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            opacity:0;
+        }
+
+        @keyframes fadeRightAnimeTextWrapper07 {
             from {
                 opacity: 0;
                 transform: translateX(100px);
