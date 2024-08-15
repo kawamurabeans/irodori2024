@@ -164,6 +164,38 @@
                     </div>
                 </div>
 
+                <div class="stick_yokan_wrapper">
+                    <div class="text_wrapper14">
+                        <div class="dividing_lines08">
+                            <span class="dividing_line021 js_trigger33"></span>
+                            <span class="dividing_line022 js_trigger34"></span>
+                            <span class="dividing_line023 js_trigger35"></span>
+                            <span class="dividing_line024 js_trigger36"></span>
+                            <span class="dividing_line025 js_trigger37"></span>
+                            <span class="dividing_line026 js_trigger38"></span>
+                        </div>
+                        <div class="text14 js_trigger39">
+                            <p>スティ</p>
+                        </div>
+                        <div class="text15 js_trigger40">
+                            <p>ックYôkan 3種</p>
+                        </div>
+                    </div>
+                    <div class="indp_img_wrapper09 js_trigger41">
+                        <img class="stick_yokan_pic" src="images/stick_yokan.jpg">
+                    </div>
+                    <div class="indp_img_wrapper10 js_trigger42">
+                        <img class="square01_pic" src="images/square01.jpg">
+                    </div>
+                    <div class="text_wrapper15 js_trigger43">
+                        <p>当店名物のスティック羊羹<br>人気のある3種類の羊羹を<br>詰め合わせました</p>
+                        <p>「メープル と 濃イ抹茶羊羹」</p>
+                        <p>「フランボワーズ と <br>能登大納言羊羹」</p>
+                        <p>「ラムレーズン と <br>エスプレッソ羊羹」</p>
+                        <p>どれも個性あふれる<br>奥深い味わいとなっております</p>
+                    </div>
+                </div>
+
             </section>
         </div>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -584,6 +616,145 @@
                                 var delay = 400;
                                 if (scroll > pos - delay){
                                     $(this).addClass('fadeDown_dividing_line020');
+                                }
+                            });
+                        });
+                    });
+                }); 
+            });
+
+            // stick yokan アニメーション
+            $(function() {
+                $.when(
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger41').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $(this).offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeLeft_indp_img_wrapper09');
+                                }
+                            });
+                        });
+                    }),
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger42').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger41').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeRight_indp_img_wrapper10');
+                                }
+                            });
+                        });
+                    }),
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger43').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger41').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeRight_text_wrapper15');
+                                }
+                            });
+                        });
+                    }),
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger39').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger41').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fade_text14');
+                                }
+                            });
+                        });
+                    }),
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger40').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger41').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fade_text15');
+                                }
+                            });
+                        });
+                    })
+                ).done(function(){ 
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger33').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger41').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeLeft_dividing_line021');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger34').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger41').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeDown_dividing_line022');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger35').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger41').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeDown_dividing_line023');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger36').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger41').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeDown_dividing_line024');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger37').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger41').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeLeft_dividing_line025');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger38').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger41').offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeLeft_dividing_line026');
                                 }
                             });
                         });
@@ -1205,308 +1376,6 @@
             opacity:0;
         }
 
-        /* コンテンツ03_白花美人 */
-
-        .sirohana_bijin_wrapper {
-            width: 100%;
-            height: 640px;
-            position: relative;
-        }
-
-        .dividing_line009 {
-            position: absolute;
-            top: -1.5%;
-            right: 11%;
-            content: "";
-            height: 2px;
-            width: 0px;
-            background-color : #b1a59d;
-            transform-origin: right center;
-            transform: rotate(-12deg);
-        }
-
-        .dividing_line010 {
-            position: absolute;
-            top: 8.3%;
-            left: 10.8%;
-            content: "";
-            height: 0px;
-            width: 2px;
-            background-color : #b1a59d;
-        }
-
-        .dividing_line011 {
-            position: absolute;
-            top: 38.2%;
-            left: 10.8%;
-            content: "";
-            height: 0px;
-            width: 2px;
-            background-color : white;
-        }
-
-        .dividing_line012 {
-            position: absolute;
-            top: 85.2%;
-            left: 10.8%;
-            content: "";
-            height: 0px;
-            width: 2px;
-            background-color : #b1a59d;
-        }
-
-        .text11 {
-            font-size: 2.4rem;
-            font-family: fot-tsukubrdgothic-std, sans-serif;
-            font-style: normal;
-            position: absolute;
-            top: 59%;
-            left: -7%;
-            color: #FFF;
-            white-space: nowrap;
-            transform: rotate(-90deg);
-            opacity: 0;
-            p {
-                margin: 0;
-            }
-        }
-
-        .indp_img_wrapper03 {
-            position: absolute;
-            right: 0;
-            top: 8%;
-            opacity: 0;
-        }
-
-        .sirohana_bijin_pic {
-            display: block;
-            width: 290px;
-            height: 195px;
-        }
-
-        .indp_img_wrapper04 {
-            position: absolute;
-            top: 36%;
-            left: -35%;
-            z-index: -1;
-            opacity: 0;
-        }
-
-        .text_wrapper09 {
-            position: absolute;
-            top: 48%;
-            left: 23%;
-            font-size: 1.5rem;
-            color: white;
-            font-family: fot-tsukubrdgothic-std, sans-serif;
-            font-style: normal;
-            text-align: center;
-            line-height: 1.5;
-            opacity: 0;
-        }
-
-        /* コンテンツ03_大正金時 */
-
-        .taisyo_kintoki_wrapper {
-            width: 100%;
-            height: 520px;
-            position: relative;
-        }
-
-        .dividing_line013 {
-            position: absolute;
-            top: -9.7%;
-            left: 10.9%;
-            content: "";
-            height: 2px;
-            width: 0px;
-            background-color : #b1a59d;
-            transform-origin: left center;
-            transform: rotate(12deg);
-        }
-
-        .dividing_line014 {
-            position: absolute;
-            top: 2.5%;
-            right: 10.8%;
-            content: "";
-            height: 0px;
-            width: 2px;
-            background-color : #b1a59d;
-        }
-
-        .dividing_line015 {
-            position: absolute;
-            top: 48.3%;
-            right: 10.8%;
-            content: "";
-            height: 0px;
-            width: 2px;
-            background-color : white;
-        }
-
-        .dividing_line016 {
-            position: absolute;
-            top: 81.8%;
-            right: 10.8%;
-            content: "";
-            height: 0px;
-            width: 2px;
-            background-color : #b1a59d;
-        }
-
-        .text12 {
-            font-size: 2.4rem;
-            font-family: fot-tsukubrdgothic-std, sans-serif;
-            font-style: normal;
-            position: absolute;
-            top: 20%;
-            right: -7%;
-            color: #cb676b;
-            white-space: nowrap;
-            transform: rotate(90deg);
-            opacity: 0;
-            p {
-                margin: 0;
-            }
-        }
-
-        .indp_img_wrapper05 {
-            position: absolute;
-            left: 0;
-            top: 3%;
-            opacity: 0;
-        }
-
-        .taisyo_kintoki_pic {
-            display: block;
-            width: 290px;
-            height: 195px;
-        }
-
-        .indp_img_wrapper06 {
-            position: absolute;
-            top: 44%;
-            right: -8%;
-            z-index: -1;
-            opacity: 0;
-        }
-
-        .text_wrapper11 {
-            position: absolute;
-            top: 51.5%;
-            right: 15%;
-            font-size: 1.5rem;
-            color: white;
-            font-family: fot-tsukubrdgothic-std, sans-serif;
-            font-style: normal;
-            text-align: center;
-            line-height: 1.5;
-            opacity: 0;
-        }
-
-        /* コンテンツ03_和三盆くるみ */
-
-        .wasanbon_kurumi_wrapper {
-            width: 100%;
-            height: 525px;
-            position: relative;
-        }
-
-        .dividing_line017 {
-            position: absolute;
-            top: -12.2%;
-            right: 10.9%;
-            content: "";
-            height: 2px;
-            width: 0px;
-            background-color : #b1a59d;
-            transform-origin: right center;
-            transform: rotate(-12deg);
-        }
-
-        .dividing_line018 {
-            position: absolute;
-            top: -0.2%;
-            left: 10.8%;
-            content: "";
-            height: 0px;
-            width: 2px;
-            background-color : #b1a59d;
-        }
-
-        .dividing_line019 {
-            position: absolute;
-            top: 48%;
-            left: 10.8%;
-            content: "";
-            height: 0px;
-            width: 2px;
-            background-color : white;
-        }
-
-        .dividing_line020 {
-            position: absolute;
-            top: 81.3%;
-            left: 10.8%;
-            content: "";
-            height: 0px;
-            width: 2px;
-            background-color : #b1a59d;
-        }
-
-        .text13 {
-            font-size: 2.4rem;
-            font-family: fot-tsukubrdgothic-std, sans-serif;
-            font-style: normal;
-            position: absolute;
-            top: 20%;
-            left: -12.5%;
-            color: #856255;
-            white-space: nowrap;
-            transform: rotate(-90deg);
-            opacity: 0;
-            p {
-                margin: 0;
-            }
-        }
-
-        .indp_img_wrapper07 {
-            position: absolute;
-            right: 0;
-            top: 3%;
-            opacity: 0;
-        }
-
-        .wasanbon_kurumi_pic {
-            display: block;
-            width: 290px;
-            height: 195px;
-        }
-
-        .indp_img_wrapper08 {
-            position: absolute;
-            top: 44%;
-            left: -8%;
-            z-index: -1;
-            opacity: 0;
-        }
-
-        .text_wrapper13 {
-            position: absolute;
-            top: 50.5%;
-            left: 17%;
-            font-size: 1.5rem;
-            color: white;
-            font-family: fot-tsukubrdgothic-std, sans-serif;
-            font-style: normal;
-            text-align: center;
-            line-height: 1.5;
-            opacity: 0;
-        }
-
-
-
         /* コンテンツ03_能登大納言_アニメーション設定 */
 
         .fadeLeft_dividing_line005 {
@@ -1645,6 +1514,106 @@
                 opacity: 1;
                 transform: translateX(0);
             }
+        }
+
+        /* コンテンツ03_白花美人 */
+
+        .sirohana_bijin_wrapper {
+            width: 100%;
+            height: 640px;
+            position: relative;
+        }
+
+        .dividing_line009 {
+            position: absolute;
+            top: -1.5%;
+            right: 11%;
+            content: "";
+            height: 2px;
+            width: 0px;
+            background-color : #b1a59d;
+            transform-origin: right center;
+            transform: rotate(-12deg);
+        }
+
+        .dividing_line010 {
+            position: absolute;
+            top: 8.3%;
+            left: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .dividing_line011 {
+            position: absolute;
+            top: 38.2%;
+            left: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : white;
+        }
+
+        .dividing_line012 {
+            position: absolute;
+            top: 85.2%;
+            left: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .text11 {
+            font-size: 2.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            position: absolute;
+            top: 59%;
+            left: -7%;
+            color: #FFF;
+            white-space: nowrap;
+            transform: rotate(-90deg);
+            opacity: 0;
+            p {
+                margin: 0;
+            }
+        }
+
+        .indp_img_wrapper03 {
+            position: absolute;
+            right: 0;
+            top: 8%;
+            opacity: 0;
+        }
+
+        .sirohana_bijin_pic {
+            display: block;
+            width: 290px;
+            height: 195px;
+        }
+
+        .indp_img_wrapper04 {
+            position: absolute;
+            top: 36%;
+            left: -35%;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .text_wrapper09 {
+            position: absolute;
+            top: 48%;
+            left: 23%;
+            font-size: 1.5rem;
+            color: white;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            text-align: center;
+            line-height: 1.5;
+            opacity: 0;
         }
 
         /* コンテンツ03_白花美人_アニメーション設定 */
@@ -1787,6 +1756,106 @@
             }
         }
 
+        /* コンテンツ03_大正金時 */
+
+        .taisyo_kintoki_wrapper {
+            width: 100%;
+            height: 520px;
+            position: relative;
+        }
+
+        .dividing_line013 {
+            position: absolute;
+            top: -9.7%;
+            left: 10.9%;
+            content: "";
+            height: 2px;
+            width: 0px;
+            background-color : #b1a59d;
+            transform-origin: left center;
+            transform: rotate(12deg);
+        }
+
+        .dividing_line014 {
+            position: absolute;
+            top: 2.5%;
+            right: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .dividing_line015 {
+            position: absolute;
+            top: 48.3%;
+            right: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : white;
+        }
+
+        .dividing_line016 {
+            position: absolute;
+            top: 81.8%;
+            right: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .text12 {
+            font-size: 2.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            position: absolute;
+            top: 20%;
+            right: -7%;
+            color: #cb676b;
+            white-space: nowrap;
+            transform: rotate(90deg);
+            opacity: 0;
+            p {
+                margin: 0;
+            }
+        }
+
+        .indp_img_wrapper05 {
+            position: absolute;
+            left: 0;
+            top: 3%;
+            opacity: 0;
+        }
+
+        .taisyo_kintoki_pic {
+            display: block;
+            width: 290px;
+            height: 195px;
+        }
+
+        .indp_img_wrapper06 {
+            position: absolute;
+            top: 44%;
+            right: -8%;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .text_wrapper11 {
+            position: absolute;
+            top: 51.5%;
+            right: 15%;
+            font-size: 1.5rem;
+            color: white;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            text-align: center;
+            line-height: 1.5;
+            opacity: 0;
+        }
+
         /* コンテンツ03_大正金時_アニメーション設定 */
 
         .fadeLeft_dividing_line013 {
@@ -1926,6 +1995,108 @@
                 transform: translateX(0);
             }
         }
+
+        /* コンテンツ03_和三盆くるみ */
+
+        .wasanbon_kurumi_wrapper {
+            width: 100%;
+            height: 525px;
+            position: relative;
+        }
+
+        .dividing_line017 {
+            position: absolute;
+            top: -12.2%;
+            right: 10.9%;
+            content: "";
+            height: 2px;
+            width: 0px;
+            background-color : #b1a59d;
+            transform-origin: right center;
+            transform: rotate(-12deg);
+        }
+
+        .dividing_line018 {
+            position: absolute;
+            top: -0.2%;
+            left: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .dividing_line019 {
+            position: absolute;
+            top: 48%;
+            left: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : white;
+        }
+
+        .dividing_line020 {
+            position: absolute;
+            top: 81.3%;
+            left: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .text13 {
+            font-size: 2.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            position: absolute;
+            top: 20%;
+            left: -12.5%;
+            color: #856255;
+            white-space: nowrap;
+            transform: rotate(-90deg);
+            opacity: 0;
+            p {
+                margin: 0;
+            }
+        }
+
+        .indp_img_wrapper07 {
+            position: absolute;
+            right: 0;
+            top: 3%;
+            opacity: 0;
+        }
+
+        .wasanbon_kurumi_pic {
+            display: block;
+            width: 290px;
+            height: 195px;
+        }
+
+        .indp_img_wrapper08 {
+            position: absolute;
+            top: 44%;
+            left: -8%;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .text_wrapper13 {
+            position: absolute;
+            top: 50.5%;
+            left: 17%;
+            font-size: 1.5rem;
+            color: white;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            text-align: center;
+            line-height: 1.5;
+            opacity: 0;
+        }
+
+
 
         /* コンテンツ03_和三盆くるみ_アニメーション */
 
@@ -2067,6 +2238,329 @@
             }
         }
 
+         /* コンテンツ03_スティック羊羹3種 */
+
+         .stick_yokan_wrapper {
+            width: 100%;
+            height: 810px;
+            position: relative;
+        }
+
+        .dividing_line021 {
+            position: absolute;
+            top: -6.6%;
+            left: 10.9%;
+            content: "";
+            height: 2px;
+            width: 0px;
+            background-color : #b1a59d;
+            transform-origin: left center;
+            transform: rotate(12deg);
+        }
+
+        .dividing_line022 {
+            position: absolute;
+            top: 1.2%;
+            right: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .dividing_line023 {
+            position: absolute;
+            top: 32.5%;
+            right: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : white;
+        }
+
+        .dividing_line024 {
+            position: absolute;
+            top: 87.6%;
+            right: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .dividing_line025 {
+            position: absolute;
+            top: 39%;
+            left: 8%;
+            content: "";
+            height: 2px;
+            width: 0px;
+            background-color : #2c7a8b;
+        }
+
+        .dividing_line026 {
+            position: absolute;
+            top: 39%;
+            left: 25.9%;
+            content: "";
+            height: 2px;
+            width: 0px;
+            background-color : white;
+        }
+
+        .text14 {
+            font-size: 2.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            position: absolute;
+            top: 34%;
+            left: 8%;
+            color: #2c7a8b;
+            white-space: nowrap;
+            opacity: 0;
+            p {
+                margin: 0;
+            }
+        }
+
+        .text15 {
+            font-size: 2.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            position: absolute;
+            top: 34%;
+            left: 26%;
+            color: white;
+            white-space: nowrap;
+            opacity: 0;
+            p {
+                margin: 0;
+            }
+        }
+
+        .indp_img_wrapper09 {
+            position: absolute;
+            left: 11.3%;
+            top: 3%;
+            opacity: 0;
+        }
+
+        .stick_yokan_pic {
+            display: block;
+            width: 290px;
+            height: 195px;
+        }
+
+        .indp_img_wrapper10 {
+            position: absolute;
+            top: 32.5%;
+            right: 0%;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .text_wrapper15 {
+            position: absolute;
+            top: 43.5%;
+            right: 13%;
+            font-size: 1.5rem;
+            color: white;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            text-align: center;
+            line-height: 1.6;
+            opacity: 0;
+        }
+
+        /* コンテンツ03_スティック羊羹3種_アニメーション */
+
+        .fadeLeft_dividing_line021 {
+            animation-name: fadeLeftAnimeDividingLine21;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fadeLeftAnimeDividingLine21 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 300px;
+            }
+        }
+
+        .fadeDown_dividing_line022 {
+            animation-name: fadeDownAnimeDividingLine22;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.0s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine22 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 254px;
+            }
+        }
+
+        .fadeDown_dividing_line023 {
+            animation-name: fadeDownAnimeDividingLine23;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.2s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine23 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 700px;
+            }
+        }
+
+        .fadeDown_dividing_line024 {
+            animation-name: fadeDownAnimeDividingLine24;
+            animation-duration: 0.1s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.4s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine24 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 46px;
+            }
+        }
+
+        .fadeLeft_dividing_line025 {
+            animation-name: fadeLeftAnimeDividingLine25;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.7s;
+        }
+
+        @keyframes fadeLeftAnimeDividingLine25 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 70px;
+            }
+        }
+
+        .fadeLeft_dividing_line026 {
+            animation-name: fadeLeftAnimeDividingLine26;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.9s;
+        }
+
+        @keyframes fadeLeftAnimeDividingLine26 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 167px;
+            }
+        }
+
+        .fade_text14 {
+            animation-name: fadeAnimeText14;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeAnimeText14 {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade_text15 {
+            animation-name: fadeAnimeText15;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeAnimeText15 {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fadeLeft_indp_img_wrapper09 {
+            animation-name: fadeLeftAnimeIndpImgWrapper09;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeLeftAnimeIndpImgWrapper09 {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fadeRight_indp_img_wrapper10 {
+            animation-name: fadeRightAnimeIndpImgWrapper10;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeRightAnimeIndpImgWrapper10 {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fadeRight_text_wrapper15 {
+            animation-name: fadeRightAnimeTextWrapper15;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeRightAnimeTextWrapper15 {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
         </style>
     </body>
