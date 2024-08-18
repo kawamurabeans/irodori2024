@@ -235,7 +235,7 @@
                 </div>
 
                 <div class="indp_img_wrapper013 js_trigger53">
-                    <img class="ingridients_pic" src="images/ingridients01.jpg">
+                    <img class="ingridients_pic01" src="images/ingridients01.jpg">
                 </div>
                 <div class="text_wrapper19 js_trigger54">
                     <p class="text18">甘納豆</p>
@@ -245,6 +245,47 @@
                     <p class="text22">スティックYôkan</p>
                     <p class="text23">新発想の羊羹<br>2層のフレーバー</p> 
                 </div>
+            </section>
+
+            <section class="content06">
+
+                <div class="point01_wrapper">
+                    <div class="text_wrapper20">
+                        <div class="dividing_lines11">
+                            <span class="dividing_line031 js_trigger55"></span>
+                            <span class="dividing_line032 js_trigger56"></span>
+                        </div>
+                        <div class="text24 js_trigger57">
+                            <p>素材へのこだわり</p>
+                        </div>
+                    </div>
+    
+                    <div class="indp_img_wrapper014 js_trigger58">
+                        <img class="ingridients_pic02" src="images/ingridients02.jpg">
+                    </div>
+                    <div class="text_wrapper21 js_trigger59">
+                        <p class="text25">国産の中でも最高峰のものを<br>全国の豆農家から<br>鮮度、均一性、見た目<br>全てが特A級のものを使用</p>
+                        <img class="point_pic01" src="images/point01.jpg">
+                    </div>
+                </div>
+
+                <div class="point02_wrapper">
+                    <div class="text_wrapper22">
+                        <div class="dividing_lines12">
+                            <span class="dividing_line033 js_trigger60"></span>
+                            <span class="dividing_line034 js_trigger61"></span>
+                        </div>
+                    </div>
+    
+                    <div class="indp_img_wrapper015 js_trigger62">
+                        <img class="ingridients_pic03" src="images/ingridients03.jpg">
+                    </div>
+                    <div class="text_wrapper23 js_trigger63">
+                        <img class="point_pic02" src="images/point02.jpg">
+                        <p class="text26">着色料・保存料は<br>一切使用しておりません<br>見た目よりも<br>おいしさこそが全てという<br>哲学に基づいています</p>
+                    </div>
+                </div>
+
             </section>
 
         </div>
@@ -957,6 +998,133 @@
                     });
                 }); 
             });
+
+            // content06_ポイント1 アニメーション
+            $(function() {
+                $.when(
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger58').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $(this).offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeRight_indp_img_wrapper14');
+                                }
+                            });
+                        });
+                    }),
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger59').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger58').offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeRight_text_wrapper21');
+                                }
+                            });
+                        });
+                    }),
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger57').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger58').offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fade_text24');
+                                }
+                            });
+                        });
+                    })
+                ).done(function(){ 
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger55').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger58').offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeRight_dividing_line031');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger56').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger58').offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeDown_dividing_line032');
+                                }
+                            });
+                        });
+                    });
+                }); 
+            });
+
+            // content06_ポイント2 アニメーション
+            $(function() {
+                $.when(
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger62').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $(this).offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeLeft_indp_img_wrapper15');
+                                }
+                            });
+                        });
+                    }),
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger63').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger62').offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeLeft_text_wrapper23');
+                                }
+                            });
+                        });
+                    })
+                ).done(function(){ 
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger60').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger62').offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeLeft_dividing_line033');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger61').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger62').offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeDown_dividing_line034');
+                                }
+                            });
+                        });
+                    });
+                }); 
+            });
+
+
+
+
+
         </script>
         
         <style>
@@ -2996,7 +3164,7 @@
             z-index: -1;
         }
 
-        .ingridients_pic {
+        .ingridients_pic01 {
             display: block;
             width: 264px;
             height: 256px;
@@ -3172,7 +3340,327 @@
             }
         }
 
-    
+        /* コンテンツ06 */
+
+        .content06 {
+            width: 100%;
+            height: 1750px; 
+        }
+
+        /* コンテンツ06_ポイント1 */
+
+        .point01_wrapper {
+            width: 100%;
+            height: 400px; 
+            position: relative;
+        }
+
+        .dividing_line031 {
+            position: absolute;
+            top: -26.2%;
+            right: 11%;
+            content: "";
+            height: 2px;
+            width: 0px;
+            background-color : #b1a59d;
+            transform-origin: right center;
+            transform: rotate(-12deg);
+        }
+
+        .dividing_line032 {
+            position: absolute;
+            top: -10.5%;
+            left: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .text24 {
+            font-size: 2.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            position: absolute;
+            top: 18%;
+            left: -18.5%;
+            color: #856255;
+            white-space: nowrap;
+            transform: rotate(-90deg);
+            opacity: 0;
+            p {
+                margin: 0;
+            }
+        }
+
+        .indp_img_wrapper014 {
+            position: absolute;
+            right: 0;
+            top: -10%;
+            opacity: 0;
+        }
+
+        .ingridients_pic02 {
+            display: block;
+            width: 260px;
+            height: 195px;
+        }
+
+        .text_wrapper21 {
+            position: absolute;
+            right: 11%;
+            top: 39%;
+            opacity: 0;
+        }
+
+        .text25 {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            font-weight: bolder;
+            color: #856255;
+            white-space: nowrap;
+            line-height: 1.3;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+        .point_pic01 {
+            display: inline-block;
+            width: 65px;
+            height: 65px;
+        }
+
+        /* コンテンツ06_ポイント1_アニメーション */
+
+        .fadeRight_dividing_line031 {
+            animation-name: fadeRightAnimeDividingLine31;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fadeRightAnimeDividingLine31 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 300px;
+            }
+        }
+
+        .fadeDown_dividing_line032 {
+            animation-name: fadeDownAnimeDividingLine32;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.0s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine32 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 330px;
+            }
+        }
+
+        .fade_text24 {
+            animation-name: fadeAnimeText24;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeAnimeText24 {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fadeRight_indp_img_wrapper14 {
+            animation-name: fadeRightAnimeIndpImgWrapper14;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeRightAnimeIndpImgWrapper14 {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fadeRight_text_wrapper21 {
+            animation-name: fadeRightTextWrapper21;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeRightTextWrapper21 {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* コンテンツ06_ポイント2 */
+
+        .point02_wrapper {
+            width: 100%;
+            height: 410px; 
+            position: relative;
+        }
+
+        .dividing_line033 {
+            position: absolute;
+            top: -27.7%;
+            left: 10.9%;
+            content: "";
+            height: 2px;
+            width: 0px;
+            background-color : #b1a59d;
+            transform-origin: left center;
+            transform: rotate(12deg);
+        }
+
+        .dividing_line034 {
+            position: absolute;
+            top: -12.1%;
+            right: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .indp_img_wrapper015 {
+            position: absolute;
+            left: 0;
+            top: -5%;
+            opacity: 0;
+        }
+
+        .ingridients_pic03 {
+            display: block;
+            width: 260px;
+            height: 170px;
+        }
+
+        .text_wrapper23 {
+            position: absolute;
+            left: 11%;
+            top: 39%;
+            opacity: 0;
+        }
+
+        .text26 {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            font-weight: bolder;
+            color: #856255;
+            white-space: nowrap;
+            line-height: 1.3;
+            text-align: center;
+            margin-left: 15px;
+        }
+
+        .point_pic02 {
+            display: inline-block;
+            width: 65px;
+            height: 65px;
+            margin-bottom: 10px;
+        }
+
+        /* コンテンツ06_ポイント2_アニメーション */
+
+        .fadeLeft_dividing_line033 {
+            animation-name: fadeLeftAnimeDividingLine33;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fadeLeftAnimeDividingLine33 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 300px;
+            }
+        }
+
+        .fadeDown_dividing_line034 {
+            animation-name: fadeDownAnimeDividingLine34;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.0s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine34 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 330px;
+            }
+        }
+
+        .fadeLeft_indp_img_wrapper15 {
+            animation-name: fadeLeftAnimeIndpImgWrapper15;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeLeftAnimeIndpImgWrapper15 {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fadeLeft_text_wrapper23 {
+            animation-name: fadeLeftTextWrapper23;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeLeftTextWrapper23 {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
 
 
