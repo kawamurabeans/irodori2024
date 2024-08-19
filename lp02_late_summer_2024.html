@@ -286,6 +286,41 @@
                     </div>
                 </div>
 
+                <div class="point03_wrapper">
+                    <div class="text_wrapper24">
+                        <div class="dividing_lines13">
+                            <span class="dividing_line035 js_trigger64"></span>
+                            <span class="dividing_line036 js_trigger65"></span>
+                        </div>
+                    </div>
+    
+                    <div class="indp_img_wrapper016 js_trigger66">
+                        <img class="ingridients_pic04" src="images/ingridients04.jpg">
+                    </div>
+                    <div class="text_wrapper25 js_trigger67">
+                        <p class="text27">絶えず進化し続ける 甘納豆<br>伝統にしがみつくのは<br>文化を守ることではない</p>
+                        <img class="point_pic03" src="images/point03.jpg">
+                    </div>
+                </div>
+
+                <div class="point04_wrapper">
+                    <div class="text_wrapper26">
+                        <div class="dividing_lines14">
+                            <span class="dividing_line037 js_trigger68"></span>
+                            <span class="dividing_line038 js_trigger69"></span>
+                            <span class="dividing_line039 js_trigger70"></span>
+                        </div>
+                    </div>
+    
+                    <div class="indp_img_wrapper017 js_trigger71">
+                        <img class="ingridients_pic05" src="images/ingridients05.jpg">
+                    </div>
+                    <div class="text_wrapper27 js_trigger72">
+                        <img class="point_pic04" src="images/point04.jpg">
+                        <p class="text28">数量限定 <br>お早めにご注文ください<br>人気商品のため<br>在庫がなくなる場合がございます</p>
+                    </div>
+                </div>
+
             </section>
 
         </div>
@@ -1114,6 +1149,128 @@
                                 var delay = 500;
                                 if (scroll > pos - delay){
                                     $(this).addClass('fadeDown_dividing_line034');
+                                }
+                            });
+                        });
+                    });
+                }); 
+            });
+
+            // content06_ポイント3 アニメーション
+            $(function() {
+                $.when(
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger66').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $(this).offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeRight_indp_img_wrapper16');
+                                }
+                            });
+                        });
+                    }),
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger67').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger66').offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeRight_text_wrapper25');
+                                }
+                            });
+                        });
+                    })
+                ).done(function(){ 
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger64').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger66').offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeRight_dividing_line035');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger65').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger66').offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeDown_dividing_line036');
+                                }
+                            });
+                        });
+                    });
+                }); 
+            });
+
+            // content06_ポイント4 アニメーション
+            $(function() {
+                $.when(
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger71').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $(this).offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeLeft_indp_img_wrapper17');
+                                }
+                            });
+                        });
+                    }),
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger72').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger71').offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeLeft_text_wrapper27');
+                                }
+                            });
+                        });
+                    })
+                ).done(function(){ 
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger68').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger71').offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeLeft_dividing_line037');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger69').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger71').offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeDown_dividing_line038');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger70').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger71').offset().top;
+                                var delay = 500;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeRight_dividing_line039');
                                 }
                             });
                         });
@@ -3662,7 +3819,318 @@
             }
         }
 
+        /* コンテンツ06_ポイント3 */
 
+        .point03_wrapper {
+            width: 100%;
+            height: 410px; 
+            position: relative;
+        }
+
+        .dividing_line035 {
+            position: absolute;
+            top: -31.9%;
+            right: 11%;
+            content: "";
+            height: 2px;
+            width: 0px;
+            background-color : #b1a59d;
+            transform-origin: right center;
+            transform: rotate(-12deg);
+        }
+
+        .dividing_line036 {
+            position: absolute;
+            top: -16.4%;
+            left: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .indp_img_wrapper016 {
+            position: absolute;
+            right: 0;
+            top: -11%;
+            opacity: 0;
+        }
+
+        .ingridients_pic04 {
+            display: block;
+            width: 260px;
+            height: 260px;
+        }
+
+        .text_wrapper25 {
+            position: absolute;
+            right: 11%;
+            top: 60%;
+            opacity: 0;
+        }
+
+        .text27 {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            font-weight: bolder;
+            color: #856255;
+            white-space: nowrap;
+            line-height: 1.3;
+            text-align: center;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .point_pic03 {
+            display: inline-block;
+            width: 65px;
+            height: 65px;
+            vertical-align: middle;
+        }
+
+        /* コンテンツ06_ポイント3_アニメーション */
+
+        .fadeRight_dividing_line035 {
+            animation-name: fadeRightAnimeDividingLine35;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fadeRightAnimeDividingLine35 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 300px;
+            }
+        }
+
+        .fadeDown_dividing_line036 {
+            animation-name: fadeDownAnimeDividingLine36;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.0s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine36 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 405px;
+            }
+        }
+
+        .fadeRight_indp_img_wrapper16 {
+            animation-name: fadeRightAnimeIndpImgWrapper16;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeRightAnimeIndpImgWrapper16 {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fadeRight_text_wrapper25 {
+            animation-name: fadeRightTextWrapper25;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeRightTextWrapper25 {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* コンテンツ06_ポイント4 */
+
+        .point04_wrapper {
+            width: 100%;
+            height: 430px; 
+            position: relative;
+        }
+
+        .dividing_line037 {
+            position: absolute;
+            top: -17.2%;
+            left: 10.9%;
+            content: "";
+            height: 2px;
+            width: 0px;
+            background-color : #b1a59d;
+            transform-origin: left center;
+            transform: rotate(12deg);
+        }
+
+        .dividing_line038 {
+            position: absolute;
+            top: -2.7%;
+            right: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .dividing_line039 {
+            position: absolute;
+            top: 80%;
+            right: 10.8%;
+            content: "";
+            height: 2px;
+            width: 0px;
+            background-color : #b1a59d;
+        }
+
+        .indp_img_wrapper017 {
+            position: absolute;
+            left: 0;
+            top: 2%;
+            opacity: 0;
+        }
+
+        .ingridients_pic05 {
+            display: block;
+            width: 274px;
+            height: 182px;
+        }
+
+        .text_wrapper27 {
+            position: absolute;
+            left: 5%;
+            top: 53%;
+            opacity: 0;
+        }
+
+        .text28 {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            font-weight: bolder;
+            color: #856255;
+            white-space: nowrap;
+            line-height: 1.3;
+            text-align: center;
+            margin-left: 15px;
+            vertical-align: middle;
+        }
+
+        .point_pic04 {
+            display: inline-block;
+            width: 65px;
+            height: 65px;
+            vertical-align: middle;
+        }
+
+        /* コンテンツ06_ポイント4_アニメーション */
+
+        .fadeLeft_dividing_line037 {
+            animation-name: fadeLeftAnimeDividingLine37;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fadeLeftAnimeDividingLine37 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 300px;
+            }
+        }
+
+        .fadeDown_dividing_line038 {
+            animation-name: fadeDownAnimeDividingLine38;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.0s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine38 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 357px;
+            }
+        }
+
+        .fadeRight_dividing_line039 {
+            animation-name: fadeRightAnimeDividingLine39;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes fadeRightAnimeDividingLine39 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 150px;
+            }
+        }
+
+        .fadeLeft_indp_img_wrapper17 {
+            animation-name: fadeLeftAnimeIndpImgWrapper17;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeLeftAnimeIndpImgWrapper17 {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fadeLeft_text_wrapper27 {
+            animation-name: fadeLeftTextWrapper27;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeLeftTextWrapper27 {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
         </style>
     </body>
