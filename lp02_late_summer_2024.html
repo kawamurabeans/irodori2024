@@ -323,6 +323,25 @@
 
             </section>
 
+            <section class="content07">
+
+                <div class="dividing_lines13">
+                    <span class="dividing_line040 js_trigger73"></span>
+                </div>
+                <div class="text_wrapper28 js_trigger74">
+                    <img class="irodori_pic03" src="images/irodori03.jpg">
+                    <p class="text29">¥ 2,870 (税込)</p>
+                </div>
+                <div class="text_wrapper29 js_trigger75">
+                    <p class="text30">8,000円以上のお買い物で<br>送料無料キャンペーン実施中！！</p>
+                </div>
+                <div class="text_wrapper30 js_trigger76">
+                    <p class="text31">※ 北海道の場合、基本送料1,650円が660円に<br>　沖縄県の場合、基本送料2,310円が1,320円に<br>　割引きを致します。ご了承くださいませ。</p>
+                    <p class="text32">※ お届け先１件につき、8,000円(税込)以上のお買上げで<br>送料無料となります。</p>
+                </div>
+
+            </section>
+
         </div>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script type="text/javascript">
@@ -1278,6 +1297,61 @@
                 }); 
             });
 
+            // content07 アニメーション
+            $(function() {
+                $.when(
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger73').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $(this).offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeDown_dividing_line040');
+                                }
+                            });
+                        });
+                    })
+                ).done(function(){ 
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger74').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger73').offset().top;
+                                var delay =400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fade_text_wrapper28_30');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger75').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger73').offset().top;
+                                var delay =400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fade_text_wrapper28_30');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger76').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger73').offset().top;
+                                var delay =400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fade_text_wrapper28_30');
+                                }
+                            });
+                        });
+                    });
+                }); 
+            });
+
 
 
 
@@ -1304,7 +1378,7 @@
 
         .main_content_wrapper {
             width: 375px;
-            margin: 30px auto 40px;
+            margin: 0 auto 40px;
         }
 
         /* トップアイキャッチ */
@@ -1353,8 +1427,8 @@
             position: absolute;
             top: 80%;
             left: 0;
-            color: white;
-            border-bottom: 1.5px solid #fff;
+            color: #FFFFFF;
+            border-bottom: 1.5px solid #FFFFFF;
             opacity: 0;
             
             p {
@@ -1371,7 +1445,7 @@
             position: absolute;
             top: 60%;
             left: 75%;
-            color: #fff;
+            color: #FFFFFF;
             white-space: nowrap;
             opacity: 0;
             transform: rotate(90deg);
@@ -1384,7 +1458,7 @@
             content: "";
             height: 0px;
             width: 2px;
-            background-color : #fff;
+            background-color : #FFFFFF;
         }
 
         /* トップアイキャッチ_アニメーション設定 */
@@ -1556,7 +1630,7 @@
             height: 340px;
             background-color: #b1a59d;
             font-size: 1.2rem;
-            color: white;
+            color: #FFFFFF;
             font-family: fot-tsukubrdgothic-std, sans-serif;
             font-style: normal;
             text-align: center;
@@ -1832,7 +1906,7 @@
             content: "";
             height: 0px;
             width: 2px;
-            background-color : #FFF;
+            background-color : #FFFFFF;
         }
 
         .dividing_line008 {
@@ -1852,7 +1926,7 @@
             position: absolute;
             top: 60%;
             right: -10%;
-            color: white;
+            color: #FFFFFF;
             white-space: nowrap;
             transform: rotate(90deg);
             opacity: 0;
@@ -1889,7 +1963,7 @@
             top: 53%;
             left: 23%;
             font-size: 1.5rem;
-            color: white;
+            color: #FFFFFF;
             font-family: fot-tsukubrdgothic-std, sans-serif;
             font-style: normal;
             text-align: center;
@@ -2074,7 +2148,7 @@
             content: "";
             height: 0px;
             width: 2px;
-            background-color : white;
+            background-color : #FFFFFF;
         }
 
         .dividing_line012 {
@@ -2094,7 +2168,7 @@
             position: absolute;
             top: 59%;
             left: -7%;
-            color: #FFF;
+            color: #FFFFFF;
             white-space: nowrap;
             transform: rotate(-90deg);
             opacity: 0;
@@ -2129,7 +2203,7 @@
             top: 48%;
             left: 23%;
             font-size: 1.5rem;
-            color: white;
+            color: #FFFFFF;
             font-family: fot-tsukubrdgothic-std, sans-serif;
             font-style: normal;
             text-align: center;
@@ -2314,7 +2388,7 @@
             content: "";
             height: 0px;
             width: 2px;
-            background-color : white;
+            background-color : #FFFFFF;
         }
 
         .dividing_line016 {
@@ -2369,7 +2443,7 @@
             top: 51.5%;
             right: 15%;
             font-size: 1.5rem;
-            color: white;
+            color: #FFFFFF;
             font-family: fot-tsukubrdgothic-std, sans-serif;
             font-style: normal;
             text-align: center;
@@ -2554,7 +2628,7 @@
             content: "";
             height: 0px;
             width: 2px;
-            background-color : white;
+            background-color : #FFFFFF;
         }
 
         .dividing_line020 {
@@ -2609,7 +2683,7 @@
             top: 50.5%;
             left: 17%;
             font-size: 1.5rem;
-            color: white;
+            color: #FFFFFF;
             font-family: fot-tsukubrdgothic-std, sans-serif;
             font-style: normal;
             text-align: center;
@@ -2796,7 +2870,7 @@
             content: "";
             height: 0px;
             width: 2px;
-            background-color : white;
+            background-color : #FFFFFF;
         }
 
         .dividing_line024 {
@@ -2826,7 +2900,7 @@
             content: "";
             height: 2px;
             width: 0px;
-            background-color : white;
+            background-color : #FFFFFF;
         }
 
         .text14 {
@@ -2851,7 +2925,7 @@
             position: absolute;
             top: 34%;
             left: 26%;
-            color: white;
+            color: #FFFFFF;
             white-space: nowrap;
             opacity: 0;
             p {
@@ -2885,7 +2959,7 @@
             top: 43.5%;
             right: 13%;
             font-size: 1.5rem;
-            color: white;
+            color: #FFFFFF;
             font-family: fot-tsukubrdgothic-std, sans-serif;
             font-style: normal;
             text-align: center;
@@ -3154,7 +3228,7 @@
             top: 46%;
             right: 25%;
             font-size: 1.5rem;
-            color: white;
+            color: #FFFFFF;
             font-family: fot-tsukubrdgothic-std, sans-serif;
             font-style: normal;
             text-align: center;
@@ -3354,7 +3428,7 @@
             position: absolute;
             top: 9%;
             left: 19%;
-            color: white;
+            color: #FFFFFF;
             white-space: nowrap;
             line-height: 1.5;
             text-align: center;
@@ -3379,7 +3453,7 @@
             position: absolute;
             top: 8.6%;
             left: 57%;
-            color: white;
+            color: #FFFFFF;
             white-space: nowrap;
             line-height: 1.5;
             text-align: center;
@@ -3404,7 +3478,7 @@
             position: absolute;
             top: 49%;
             left: 39%;
-            color: white;
+            color: #FFFFFF;
             white-space: nowrap;
             line-height: 1.5;
             text-align: center;
@@ -4131,6 +4205,139 @@
                 transform: translateX(0);
             }
         }
+
+        /* コンテンツ07 */
+
+        .content07 {
+            width: 100%;
+            height: 545px; 
+            position: relative;
+        }
+
+        .dividing_line040 {
+            position: absolute;
+            top: -34%;
+            left: 49%;
+            content: "";
+            height: 0;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .text_wrapper28 {
+            position: absolute;
+            top: -18%;
+            left: 25%;
+            opacity: 0;
+        }
+
+        .irodori_pic03 {
+            display: block;
+            width: 160px;
+            height: 143px;
+        }
+
+        .text29 {
+            display: inline-block;
+            font-size: 2.4rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            color: #856255;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 5px;
+        }
+
+        .text_wrapper29 {
+            position: absolute;
+            top: 32%;
+            left: 6%;
+            display: block;
+            width: 330px;
+            height: 80px;
+            background-color: #B03F45;
+            border-radius: 12px;
+            opacity: 0;
+        }
+
+        .text30 {
+            display: block;
+            font-size: 1.6rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            color: #FFFFFF;
+            text-align: center;
+            width: 270px;
+            margin:  7px auto 0;
+        }
+
+        .text_wrapper30 {
+            position: absolute;
+            top: 49%;
+            left: 10%;
+            display: block;
+            width: 295px;
+            opacity: 0;
+        }
+
+        .text31, .text32 {
+            display: block;
+            font-size: 1.1rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            font-weight: bolder;
+            color: #856255;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .text31 {
+            width: 250px;
+        }
+
+        .text32 {
+            text-align: center;
+            width: 295px;
+            margin-top: 10px;
+        }
+
+        /* コンテンツ07_アニメーション */
+
+        .fadeDown_dividing_line040 {
+            animation-name: fadeDownAnimeDividingLine40;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine40 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 56px;
+            }
+        }
+
+        .fade_text_wrapper28_30 {
+            animation-name: fadeTextWrapper2830;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeTextWrapper2830 {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
 
         </style>
     </body>
