@@ -447,6 +447,88 @@
 
             </section>
 
+            <section class="content09">
+
+                <div class="dividing_lines16">
+                    <span class="dividing_line049 js_trigger86"></span>
+                </div>
+                <div class="text_wrapper44 js_trigger87">
+                    <p class="text51">のし紙の種類</p>
+                </div>
+                <div class="text_wrapper45 js_trigger88">
+                    <p class="text52">ご贈答に適したのし紙をご用意いたします。</p>
+                    <p class="text53">「商品」ページにて、のし紙の種類を選択してください。<br>名入れ・表書きをご希望の際は、ご入力をお願いいたします。<br>のし紙の掛け方の選択が無い際は、外のしで対応させて頂きます。</p>
+                </div>
+                <div class="indp_img_wrapper024 js_trigger89">
+                    <img class="wrapping_pic01" src="images/wrapping01.jpg">
+                </div>
+
+            </section>
+
+            <section class="content10">
+
+                <div class="message01_wrapper">
+
+                    <div class="text_wrapper46">
+                        <div class="dividing_lines17">
+                            <span class="dividing_line050 fadeDown_dividing_line050 js_trigger90"></span>
+                            <span class="dividing_line051 fadeLeft_dividing_line051 js_trigger91"></span>
+                            <span class="dividing_line052 fadeDown_dividing_line052 js_trigger92"></span>
+                        </div>
+                        <div class="text54 js_trigger93">
+                            <p>私たちについて</p>
+                        </div>
+                    </div>
+    
+                    <div class="text_wrapper47 js_trigger94">
+                        <p class="text55">私ども【甘納豆かわむら】は<br>金沢の西茶屋街にて 2001年から</p>
+                        <img class="message01_pic" src="">
+                        <p class="text56">素材にこだわって甘納豆を中心に<br>和菓子と向き合ってまいりました。</p>
+                    </div>
+
+                </div>
+
+                <div class="message02_wrapper">
+
+
+                    <div class="dividing_lines18">
+                        <span class="dividing_line053 js_trigger95"></span>
+                        <span class="dividing_line054 js_trigger96"></span>
+                    </div>
+    
+                    <div class="text_wrapper48 js_trigger97">
+                        <p class="text57">そんな私たちが、研究を重ねて生み出した<br>最高傑作の商品を皆様にお届けします。</p>
+                        <img class="message02_pic" src="">
+                        <p class="text58">皆様が召し上がって幸せな気持ちに<br>なれるよう丹精をこめて作りました。<br>ぜひご賞味ください。</p>
+                    </div>
+
+                </div>
+
+                <div class="message03_wrapper">
+
+                    <div class="text_wrapper49">
+                        <div class="dividing_lines19">
+                            <span class="dividing_line055 js_trigger98"></span>
+                            <span class="dividing_line056 js_trigger99"></span>
+                            <span class="dividing_line057 js_trigger100"></span>
+                        </div>
+                        <div class="text59 js_trigger101">
+                            <p>想いを果子で “いろどる”</p>
+                        </div>
+                        <div class="text60 js_trigger102">
+                            <p>Irodori S</p>
+                        </div>
+                    </div>
+    
+                    <div class="text_wrapper50 js_trigger103">
+                        <img class="message03_pic" src="">
+                        <p class="text56">素材の魅力に想いを添えた<br>日々に寄り添うお菓子を作り続ける事</p>
+                    </div>
+
+                </div>
+
+            </section>
+
         </div>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script type="text/javascript">
@@ -1572,14 +1654,65 @@
                 }); 
             });
 
-
-
-
-
+            // content09 アニメーション
+            $(function() {
+                $.when(
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger86').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $(this).offset().top;
+                                var delay = 400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fadeDown_dividing_line049');
+                                }
+                            });
+                        });
+                    })
+                ).done(function(){ 
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger87').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger86').offset().top;
+                                var delay =400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fade_text_wrapper44_45_indp_img_wrapper24');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger88').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger86').offset().top;
+                                var delay =400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fade_text_wrapper44_45_indp_img_wrapper24');
+                                }
+                            });
+                        });
+                    });
+                    $(function(){
+                        $(window).scroll(function(){
+                            $('.js_trigger89').each(function(){
+                                var scroll = $(window).scrollTop();
+                                var pos = $('.js_trigger86').offset().top;
+                                var delay =400;
+                                if (scroll > pos - delay){
+                                    $(this).addClass('fade_text_wrapper44_45_indp_img_wrapper24');
+                                }
+                            });
+                        });
+                    });
+                }); 
+            });
 
         </script>
         
         <style>
+
         /* 基本設定 */
         @charset "UTF-8";
         
@@ -4896,7 +5029,220 @@
             }
         }
 
+        /* コンテンツ09 */
+
+        .content09 {
+            width: 100%;
+            height: 510px; 
+            position: relative;
+        }
+
+        .dividing_line049 {
+            position: absolute;
+            top: -27%;
+            left: 49.2%;
+            content: "";
+            height: 0;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .text_wrapper44 {
+            position: absolute;
+            display: block;
+            top: -11%;
+            left: 15%;
+            height: 47px;
+            width: 260px;
+            background-color: #DFB787;
+            border-radius: 12px;
+            color: #FFFFFF;
+            opacity: 0;
+        }
+
+        .text51 {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            font-size: 2.4rem;
+        }
+
+
+        .text_wrapper45 {
+            margin-top: 40px;
+            text-align: center;
+            opacity: 0;
+        }
+
+        .text52, .text53 {
+            display: block;
+            font-size: 1.1rem;
+            font-family: fot-tsukubrdgothic-std, sans-serif;
+            font-style: normal;
+            font-weight: bolder;
+            color: #856255;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .text52 {
+            margin-bottom: 20px;
+        }
+
+        .text53 {
+            margin-bottom: 40px;
+        }
+
+        .indp_img_wrapper024 {
+            opacity: 0;
+        }
+
+        .wrapping_pic01 {
+            display: block;
+            width: 363px;
+            height: 215px;
+        }
+
+        /* コンテンツ09_アニメーション */
+
+        .fadeDown_dividing_line049 {
+            animation-name: fadeDownAnimeDividingLine49;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine49 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 56px;
+            }
+        }
+
+        .fade_text_wrapper44_45_indp_img_wrapper24 {
+            animation-name: fadeTextWrapper4445IndpImgWrapper24;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeTextWrapper4445IndpImgWrapper24 {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
         
+        /* コンテンツ10 */
+
+        .content06 {
+            width: 100%;
+            height: 1800px; 
+        }
+
+        /* コンテンツ10_メッセージ1 */
+
+        .message01_wrapper {
+            width: 100%;
+            height: 560px; 
+            position: relative;
+        }
+
+        .dividing_line050 {
+            position: absolute;
+            top: -26.2%;
+            left: 49.2%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        .dividing_line051 {
+            position: absolute;
+            top: -13.5%;
+            left: 8.8%;
+            content: "";
+            height: 2px;
+            width: 0px;
+            background-color : #b1a59d;
+            transform-origin: left center;
+        }
+
+        .dividing_line052 {
+            position: absolute;
+            top: -10.5%;
+            left: 10.8%;
+            content: "";
+            height: 0px;
+            width: 2px;
+            background-color : #b1a59d;
+        }
+
+        /* コンテンツ10_メッセージ1_アニメーション */
+        
+        .fadeDown_dividing_line050 {
+            animation-name: fadeDownAnimeDividingLine50;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine50 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 56px;
+            }
+        }
+
+        .fadeLeft_dividing_line051 {
+            animation-name: fadeLeftAnimeDividingLine51;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 0.7s;
+        }
+
+        @keyframes fadeLeftAnimeDividingLine51 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 155px;
+            }
+        }
+
+        .fadeDown_dividing_line052 {
+            animation-name: fadeDownAnimeDividingLine52;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.2s;
+        }
+
+        @keyframes fadeDownAnimeDividingLine52 {
+            from {
+                height: 0px;
+            }
+
+            to {
+                height: 506px;
+            }
+        }
+
+
+
+
         </style>
     </body>
 </html>
